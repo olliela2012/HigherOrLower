@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="HigherorLower/HigherorLower.csproj" />
+  <Project Path="Higherorlowerconsole/Higherorlowerconsole.csproj" Id="40336a3b-4d7d-4974-a9c6-4ac6394895f2" />
+  <Project Path="HigherOrLowerLogic/HigherOrLowerLogic.csproj" />
+</Solution>

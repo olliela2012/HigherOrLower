@@ -1,0 +1,20 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Tt]est[Rr]esults/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+
+# .NET tool state
+*.nuget.g.props
+*.nuget.g.targets
+project.lock.json
+project.fragment.lock.json
