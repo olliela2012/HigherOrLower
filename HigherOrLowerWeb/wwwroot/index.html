@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2ff">
+  <title>Higher or Lower — The Card Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=3">
+  <script src="./game.js?v=3" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Higher or Lower home">
+        <span class="brand-mark" aria-hidden="true">♠</span>
+        <span>THE CARD CLUB</span>
+        <span class="sparkle" aria-hidden="true">✦</span>
+      </a>
+      <span class="edition">A LITTLE GAME OF CHANCE</span>
+    </header>
+
+    <section class="game-layout" aria-labelledby="title">
+      <div class="game-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE NEXT CARD IS...</div>
+        <h1 id="title">Higher or <em>Lower?</em></h1>
+        <p class="intro">Take a look at the card on the table. Do you think the next one will be higher or lower?</p>
+
+        <div class="message-line" aria-live="polite">
+          <span class="message-indicator" id="message-indicator">✦</span>
+          <span id="message">Pick a side and trust your instinct.</span>
+        </div>
+
+        <div class="controls" aria-label="Make your guess">
+          <button class="guess-button higher" id="higher-button" type="button"><span class="button-arrow" aria-hidden="true">↑</span><span>HIGHER</span><kbd>H</kbd></button>
+          <button class="guess-button lower" id="lower-button" type="button"><span class="button-arrow" aria-hidden="true">↓</span><span>LOWER</span><kbd>L</kbd></button>
+        </div>
+
+        <div class="bottom-row">
+          <span class="keyboard-hint"><i class="hint-dot"></i>PRESS H OR L TO PLAY</span>
+          <button class="reset-button" id="restart-button" type="button"><span aria-hidden="true">↻</span> NEW GAME</button>
+        </div>
+      </div>
+
+      <aside class="illustration-card" aria-label="Cards and game score">
+        <div class="card-top"><span>THE CARD TABLE</span><span id="deck-count">51 CARDS LEFT</span></div>
+        <div class="card-stage">
+          <div class="card-position">
+            <div class="card-label" id="current-caption">CURRENT CARD</div>
+            <article class="playing-card" id="current-card" aria-label="Current card">
+              <span class="card-corner corner-top"><span class="rank">?</span><span class="suit">?</span></span>
+              <span class="card-center">?</span>
+              <span class="card-corner corner-bottom"><span class="rank">?</span><span class="suit">?</span></span>
+            </article>
+          </div>
+          <div class="card-divider" aria-hidden="true">?</div>
+          <div class="card-position">
+            <div class="card-label" id="next-caption">YOUR GUESS</div>
+            <article class="playing-card card-back" id="next-card" aria-label="Next card hidden">
+              <div class="back-pattern"><span>H / L</span></div>
+            </article>
+          </div>
+        </div>
+        <div class="score-strip">
+          <div class="score-block"><span class="score-label">YOUR STREAK</span><strong id="score">00</strong></div>
+          <div class="score-separator"></div>
+          <div class="score-block"><span class="score-label">PERSONAL BEST</span><strong id="best">00</strong></div>
+          <div class="score-note">ACE LOW<br>KING HIGH</div>
+        </div>
+        <div class="card-caption"><span class="caption-mark">✦</span> A good guess keeps the run going</div>
+      </aside>
+    </section>
+
+    <footer class="footer"><span>TAKE A GUESS. HAVE SOME FUN.</span><span>MADE FOR THE CARD CLUB <span class="footer-heart">♥</span></span></footer>
+  </main>
+</body>
+</html>
+
