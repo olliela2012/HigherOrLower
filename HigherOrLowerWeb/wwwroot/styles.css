@@ -28,6 +28,9 @@ button { font: inherit; cursor: pointer; }
 .brand { display: inline-flex; align-items: center; gap: 11px; color: #32265f; font-size: 11px; font-weight: 700; letter-spacing: 2.2px; text-decoration: none; }
 .brand-mark { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 50%; color: #fff; background: var(--purple); box-shadow: 0 4px 0 var(--purple-dark); font: 17px "Playfair Display", serif; }
 .sparkle { color: #ff6b61; font-size: 15px; }
+.topbar-actions { display: flex; align-items: center; gap: 18px; }
+.home-link { display: inline-flex; min-height: 35px; align-items: center; gap: 7px; padding: 0 12px; border: 1px solid #c9bee8; border-radius: 999px; color: #5739b5; background: #fff; font: 500 9px "DM Mono", monospace; letter-spacing: .7px; text-decoration: none; white-space: nowrap; transition: background .16s, border-color .16s, transform .16s; }
+.home-link:hover { transform: translateY(-1px); border-color: #8862e5; background: #eee8ff; }
 .edition, .eyebrow, .card-top, .card-label, .score-label, .score-note, .keyboard-hint, .reset-button, .footer { font-family: "DM Mono", monospace; letter-spacing: 1.1px; }
 .edition { color: #765bd1; font-size: 9px; font-weight: 500; }
 .game-layout { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); gap: 66px; align-items: center; min-height: 680px; padding: 54px 0 56px; }
@@ -96,7 +99,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid #7452e8; outline-offs
 @media (max-width: 700px) {
   .page-shell { padding: 0 22px; }
   .topbar { height: 72px; }
-  .edition { font-size: 7px; }
+  .edition { display: none; }
   .game-layout { display: flex; flex-direction: column; align-items: stretch; gap: 29px; padding: 27px 0 35px; }
   .illustration-card { order: -1; min-height: 365px; }
   .card-stage { gap: clamp(10px, 5vw, 24px); padding: 19px 0; }
